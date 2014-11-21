@@ -8,3 +8,7 @@ To get it running on Ubuntu, install freeglut3-dev, navigate to the
 directory containing all the code, and type 'make'. This will make
 an executable called 'a.out'. If you want it named something else,
 just change up the makefile.
+
+This was written by myself (Justin Ricks) and Devyn Stott, except for
+the uiDraw.h, uiDraw.cpp, uiInteract.h, and uiInteract.cpp, which
+were written by my Professor (James Helfrich)
