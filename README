@@ -1,0 +1,10 @@
+This is an implementation of Atari's Asteroids game from the 70's!
+I made this in a university course a few years ago, in collaboration
+with Devyn Stott.
+Anyway, I figured Github would be a good place for me to put this so
+I can keep track of it better. It was built on a RHEL machine, but it
+runs on my Ubuntu 14.10 (and it ran on the earlier versions as well).
+To get it running on Ubuntu, install freeglut3-dev, navigate to the
+directory containing all the code, and type 'make'. This will make
+an executable called 'a.out'. If you want it named something else,
+just change up the makefile.
