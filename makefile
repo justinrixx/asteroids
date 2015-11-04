@@ -16,22 +16,22 @@
 ## The Real Deal
 #################################
 a.out: asteroidsDriver.cpp asteroids.h asteroids.o rock.o ship.o uiDraw.o uiInteract.o bullet.o vector.o score.o
-	g++ -o a.out asteroidsDriver.cpp asteroids.o vector.o ship.o rock.o bullet.o uiDraw.o uiInteract.o score.o -lglut -lGLU -lGL
+	g++ -o a.out asteroidsDriver.cpp asteroids.o vector.o ship.o rock.o bullet.o uiDraw.o uiInteract.o score.o -lglut -lGL -lGLU -O3
 
 #################################
 ## Driver Programs
 #################################
 bulletDriver: bullet.o asteroids.o uiDraw.o uiInteract.o bulletDriver.cpp vector.o asteroids.h
-	g++ -o bulletDriver bulletDriver.cpp bullet.o vector.o asteroids.o uiDraw.o uiInteract.o -lglut -lGLU -lGL
+	g++ -o bulletDriver bulletDriver.cpp bullet.o vector.o asteroids.o uiDraw.o uiInteract.o -lglut -lGLU -lGL -O3
 
 shipDriver: ship.o uiDraw.o uiInteract.o asteroids.o shipDriver.cpp asteroids.h vector.o
-	g++ -o shipDriver shipDriver.cpp shootable.h ship.o asteroids.o uiDraw.o uiInteract.o vector.o -lglut -lGLU -lGL
+	g++ -o shipDriver shipDriver.cpp shootable.h ship.o asteroids.o uiDraw.o uiInteract.o vector.o -lglut -lGLU -lGL -O3
 
 rockDriver: rock.o asteroids.h uiDraw.o uiInteract.o rockDriver.cpp vector.o asteroids.o
-	g++ -o rockDriver rockDriver.cpp rock.o vector.o uiDraw.o uiInteract.o asteroids.o -lglut -lGLU -lGL
+	g++ -o rockDriver rockDriver.cpp rock.o vector.o uiDraw.o uiInteract.o asteroids.o -lglut -lGLU -lGL -O3
 
 asteroidsDriver: asteroidsDriver.cpp asteroids.h asteroids.o rock.o ship.o uiDraw.o uiInteract.o bullet.o vector.o score.o
-	g++ -o asteroidsDriver asteroidsDriver.cpp asteroids.o vector.o ship.o rock.o bullet.o uiDraw.o uiInteract.o score.o -lglut -lGLU -lGL
+	g++ -o asteroidsDriver asteroidsDriver.cpp asteroids.o vector.o ship.o rock.o bullet.o uiDraw.o uiInteract.o score.o -lglut -lGLU -lGL -O3
 
 ################################
 ## Dependencies (.o's)
